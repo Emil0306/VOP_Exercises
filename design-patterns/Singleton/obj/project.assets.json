@@ -8,24 +8,25 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\emil7\\.nuget\\packages\\": {}
+    "/home/emil7/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "\\\\wsl.localhost\\Ubuntu\\home\\emil7\\VOP_Exercises\\design-patterns\\Singleton\\Singleton.csproj",
+      "projectUniqueName": "/home/emil7/VOP_Exercises/design-patterns/Singleton/Singleton.csproj",
       "projectName": "Singleton",
-      "projectPath": "\\\\wsl.localhost\\Ubuntu\\home\\emil7\\VOP_Exercises\\design-patterns\\Singleton\\Singleton.csproj",
-      "packagesPath": "C:\\Users\\emil7\\.nuget\\packages\\",
-      "outputPath": "\\\\wsl.localhost\\Ubuntu\\home\\emil7\\VOP_Exercises\\design-patterns\\Singleton\\obj\\",
+      "projectPath": "/home/emil7/VOP_Exercises/design-patterns/Singleton/Singleton.csproj",
+      "packagesPath": "/home/emil7/.nuget/packages/",
+      "outputPath": "/home/emil7/VOP_Exercises/design-patterns/Singleton/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\emil7\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/emil7/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
+        "/usr/lib/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -60,12 +61,26 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[9.0.11, 9.0.11]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.linux-x64",
+            "version": "[9.0.11, 9.0.11]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[9.0.11, 9.0.11]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
