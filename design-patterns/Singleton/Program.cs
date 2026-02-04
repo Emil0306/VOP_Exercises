@@ -1,3 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using DesignPatterns;
 
-Console.WriteLine("Hello, World!");
+class Program
+{
+    static void Main(string[] args)
+    {
+        MyClass mc = MyClass.GetInstance();
+        mc.PrintValue();
+    }
+}
