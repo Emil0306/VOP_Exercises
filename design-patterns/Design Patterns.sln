@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton", "Singleton\Singleton.csproj", "{400691CC-FBFB-41B9-98B5-C8599BF31245}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facade", "Facade\Facade.csproj", "{EFC333DA-CFAF-4BE2-B5BB-26340C9A42D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircularArray", "CircularArray\CircularArray.csproj", "{3144314E-5DCD-4413-A04A-8F49B6238CDF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{400691CC-FBFB-41B9-98B5-C8599BF31245}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{400691CC-FBFB-41B9-98B5-C8599BF31245}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{400691CC-FBFB-41B9-98B5-C8599BF31245}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{400691CC-FBFB-41B9-98B5-C8599BF31245}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFC333DA-CFAF-4BE2-B5BB-26340C9A42D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFC333DA-CFAF-4BE2-B5BB-26340C9A42D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFC333DA-CFAF-4BE2-B5BB-26340C9A42D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFC333DA-CFAF-4BE2-B5BB-26340C9A42D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3144314E-5DCD-4413-A04A-8F49B6238CDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3144314E-5DCD-4413-A04A-8F49B6238CDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3144314E-5DCD-4413-A04A-8F49B6238CDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3144314E-5DCD-4413-A04A-8F49B6238CDF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
