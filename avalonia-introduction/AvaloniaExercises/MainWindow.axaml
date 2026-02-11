@@ -42,5 +42,23 @@
                 <Button Content="Show Image" Click="Exercise3ShowImage_Click" />
             </StackPanel>
         </TabItem>
+        <TabItem Header="Exercise 4">
+            <StackPanel Margin="20" Spacing="10">
+                <Label>Enter two numbers:</Label>
+                <Grid RowDefinitions="*,*" ColumnDefinitions="*,*">
+                    <Label Grid.Row="0" Grid.Column="0">Number 1:</Label>
+                    <Label Grid.Row="1" Grid.Column="0">Number 2:</Label>
+                    <TextBox Grid.Row="0" Grid.Column="1" Name="Number1"></TextBox>
+                    <TextBox Grid.Row="1" Grid.Column="1" Name="Number2"></TextBox>
+                </Grid>
+                <Label>Result:</Label>
+                <TextBox Name="Result" IsReadOnly="True"/>
+                <Grid RowDefinitions="*" ColumnDefinitions="*,*,*">
+                    <Button Grid.Column="0" Content="Add" Click="Exercise4Add_Click"/>
+                    <Button Grid.Column="1" Content="Subtract" Click="Exercise4Subtract_Click"/>
+                    <Button Grid.Column="2" Content="Multiply" Click="Exercise4Multiply_Click"/>
+                </Grid>
+            </StackPanel>
+        </TabItem>
     </TabControl>
 </Window>

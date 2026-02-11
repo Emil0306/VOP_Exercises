@@ -45,4 +45,56 @@ public partial class MainWindow : Window
             animalImage.Source =  new Bitmap(AssetLoader.Open(new Uri("avares://AvaloniaExercises/Assets/bird.jpg")));
         }
     }
+
+    private void Exercise4Add_Click(object sender, RoutedEventArgs e)
+    {
+        var resultTextBox = this.FindControl<TextBox>("Result");
+        var number1TextBox = this.FindControl<TextBox>("Number1");
+        var number2TextBox = this.FindControl<TextBox>("Number2");
+
+        double result;
+        if (double.TryParse(number1TextBox.Text, out double n1) && double.TryParse(number2TextBox.Text, out double n2))
+        {
+            result = n1 + n2;
+            resultTextBox.Text = number1TextBox.Text + " + " + number2TextBox.Text + " = " + result;
+        }
+        else
+        {
+            resultTextBox.Text = "Could not parse number";
+        }
+    }
+    private void Exercise4Subtract_Click(object sender, RoutedEventArgs e)
+    {
+        var resultTextBox = this.FindControl<TextBox>("Result");
+        var number1TextBox = this.FindControl<TextBox>("Number1");
+        var number2TextBox = this.FindControl<TextBox>("Number2");
+
+        double result;
+        if (double.TryParse(number1TextBox.Text, out double n1) && double.TryParse(number2TextBox.Text, out double n2))
+        {
+            result = n1 - n2;
+            resultTextBox.Text = number1TextBox.Text + " - " + number2TextBox.Text + " = " + result;
+        }
+        else
+        {
+            resultTextBox.Text = "Could not parse number";
+        }
+    }
+    private void Exercise4Multiply_Click(object sender, RoutedEventArgs e)
+    {
+        var resultTextBox = this.FindControl<TextBox>("Result");
+        var number1TextBox = this.FindControl<TextBox>("Number1");
+        var number2TextBox = this.FindControl<TextBox>("Number2");
+
+        double result;
+        if (double.TryParse(number1TextBox.Text, out double n1) && double.TryParse(number2TextBox.Text, out double n2))
+        {
+            result = n1 * n2;
+            resultTextBox.Text = number1TextBox.Text + " * " + number2TextBox.Text + " = " + result;
+        }
+        else
+        {
+            resultTextBox.Text = "Could not parse number";
+        }
+    }
 }
