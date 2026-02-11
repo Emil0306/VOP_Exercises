@@ -1,0 +1,20 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="640" d:DesignHeight="480"
+        Width="640" Height="480"
+        x:Class="Ciphers.Ciphers.MainWindow"
+        Title="Ciphers">
+    <StackPanel>
+        <Border
+            Margin="10"
+            Background="LightGreen">
+                        
+            <TextBlock TextAlignment="Center" Margin="10" FontSize="26">Ciphers</TextBlock>
+        </Border>
+        <Grid ColumnDefinitions="Auto 280 Auto" RowDefinitions="Auto Auto Auto Auto Auto">
+            <ButtonSpinner Grid.Row="1" Grid.Column="2" Margin="10" Name="Spinner" FontSize="18" AllowSpin="True" Spin="Spinner_OnSpin" >16</ButtonSpinner>
+        </Grid>
+    </StackPanel>
+</Window>
