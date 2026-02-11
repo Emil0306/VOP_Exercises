@@ -14,7 +14,15 @@
             <TextBlock TextAlignment="Center" Margin="10" FontSize="26">Ciphers</TextBlock>
         </Border>
         <Grid ColumnDefinitions="Auto 280 Auto" RowDefinitions="Auto Auto Auto Auto Auto">
+            <Label Grid.Row="0" Grid.Column="0" Margin="10">Message</Label>
+            <TextBox Grid.Row="0" Margin="10" Grid.Column="1" Name="MessageTextBox"/>
+            <RadioButton Name="Atbash" Margin="10" GroupName="encryptMethod" Grid.Row="1" Grid.Column="0">Atbash</RadioButton>
+            <RadioButton Name="Caesar" Margin="10" GroupName="encryptMethod" Grid.Row="1" Grid.Column="1">Caesar</RadioButton>
             <ButtonSpinner Grid.Row="1" Grid.Column="2" Margin="10" Name="Spinner" FontSize="18" AllowSpin="True" Spin="Spinner_OnSpin" >16</ButtonSpinner>
+            <Button Grid.Row="2" Grid.Column="0" Click="Encrypt_Click" Margin="10">Encrypt</Button>
+            <Button Grid.Row="3" Grid.Column="0" Click="Decrypt_Click" Margin="10">Decrypt</Button>
+            <Label Grid.Row="2" Grid.Column="1" Margin="10" Name="EncryptLabel"></Label>
+            <Label Grid.Row="3" Grid.Column="1" Margin="10" Name="DecryptLabel"></Label>
         </Grid>
     </StackPanel>
 </Window>

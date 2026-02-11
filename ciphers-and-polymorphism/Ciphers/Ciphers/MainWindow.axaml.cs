@@ -32,4 +32,32 @@ public partial class MainWindow : Window
                 break;
         }
     }
+    
+    private void Encrypt_Click(object sender, RoutedEventArgs e)
+    {
+        if (Caesar.IsChecked == true)
+        {
+            CaesarCipher caesar = new CaesarCipher(Int32.Parse(Spinner.Content!.ToString()!));
+            EncryptLabel.Content = caesar.Encrypt(MessageTextBox.Text);
+        }
+        else if (Atbash.IsChecked == true)
+        {
+            AtbashCipher atBash = new AtbashCipher();
+            EncryptLabel.Content = atBash.Encrypt(MessageTextBox.Text);
+        }
+    }
+
+    private void Decrypt_Click(object sender, RoutedEventArgs e)
+    {
+        if (Caesar.IsChecked == true)
+        {
+            CaesarCipher caesar = new CaesarCipher(Int32.Parse(Spinner.Content!.ToString()!));
+            DecryptLabel.Content = caesar.Decrypt(MessageTextBox.Text);
+        }
+        else if (Atbash.IsChecked == true)
+        {
+            AtbashCipher atBash = new AtbashCipher();
+            DecryptLabel.Content = atBash.Decrypt(MessageTextBox.Text);
+        }
+    }
 }

@@ -18,6 +18,13 @@ public abstract class AbstractCipher : ICipherInterface
 
     protected int FindCharIndex(char ch)
     {
-        throw new NotImplementedException("Not implemented!");
+        for (int i = 0; i < Alphabet.Length; i++)
+        {
+            if (Alphabet[i] == ch)
+            {
+                return i;
+            }
+        }
+        return -1;
     }
 }
