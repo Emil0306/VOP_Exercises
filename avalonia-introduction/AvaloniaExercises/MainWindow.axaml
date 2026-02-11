@@ -8,11 +8,13 @@
    
     <TabControl>
         <TabItem Header="Exercise 1">
-            <Grid RowDefinitions="*,*" ColumnDefinitions="*,*">
+            <Grid RowDefinitions="*,*,*" ColumnDefinitions="*,*">
                 <Rectangle Grid.Row="0" Grid.Column="0" Fill="Red"/>
                 <Rectangle Grid.Row="0" Grid.Column="1" Fill="Blue"/>
                 <Rectangle Grid.Row="1" Grid.Column="0" Fill="Green"/>
                 <Rectangle Grid.Row="1" Grid.Column="1" Fill="Yellow"/>
+                <Rectangle Grid.Row="2" Grid.Column="0" Fill="Purple"/>
+                <Rectangle Grid.Row="2" Grid.Column="1" Fill="Brown"/>
             </Grid>
         </TabItem>
 
