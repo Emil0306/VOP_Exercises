@@ -28,14 +28,21 @@ public partial class MainWindow : Window
     private void Exercise3ShowImage_Click(object sender, RoutedEventArgs e)
     {
         var catRadioButton = this.FindControl<RadioButton>("CatRadioButton");
+        var dogRadioButton = this.FindControl<RadioButton>("DogRadioButton");
+        var birdRadioButton = this.FindControl<RadioButton>("BirdRadioButton");
         var animalImage = this.FindControl<Image>("AnimalImage");
 
         if (catRadioButton.IsChecked == true)
         {
-         
             animalImage.Source =  new Bitmap(AssetLoader.Open(new Uri("avares://AvaloniaExercises/Assets/cat.jpg")));
-
         }
-     
+        else if (dogRadioButton.IsChecked == true)
+        {
+            animalImage.Source =  new Bitmap(AssetLoader.Open(new Uri("avares://AvaloniaExercises/Assets/dog.jpg")));
+        }
+        else if (birdRadioButton.IsChecked == true)
+        {
+            animalImage.Source =  new Bitmap(AssetLoader.Open(new Uri("avares://AvaloniaExercises/Assets/bird.jpg")));
+        }
     }
 }

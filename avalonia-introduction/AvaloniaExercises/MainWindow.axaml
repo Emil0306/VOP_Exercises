@@ -36,6 +36,8 @@
             <StackPanel Margin="20" Spacing="10">
                 <TextBlock Text="Choose an animal:" />
                 <RadioButton GroupName="AnimalGroup" Name= "CatRadioButton" Content="Cat" IsChecked="True" />
+                <RadioButton GroupName="AnimalGroup" Name= "DogRadioButton" Content="Dog" IsChecked="False" />
+                <RadioButton GroupName="AnimalGroup" Name= "BirdRadioButton" Content="Bird" IsChecked="False" />
                 <Image Name="AnimalImage" Width="200" Height="200" /> 
                 <Button Content="Show Image" Click="Exercise3ShowImage_Click" />
             </StackPanel>
