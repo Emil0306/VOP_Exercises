@@ -26,6 +26,7 @@
                     <ComboBoxItem>Item 2</ComboBoxItem>
                     <ComboBoxItem>Item 3</ComboBoxItem>
                 </ComboBox>
+                <CheckBox Name="Exercise2CheckBox"></CheckBox>
                 <Button Content="Show Output" Click="Exercise2ShowOutput_Click"/>
                 <TextBlock Name="OutputTextBlock" TextWrapping="Wrap"/>
             </StackPanel>

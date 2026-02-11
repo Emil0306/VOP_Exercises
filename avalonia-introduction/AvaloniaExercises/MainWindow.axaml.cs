@@ -19,8 +19,9 @@ public partial class MainWindow : Window
         var textBox = this.FindControl<TextBox>("Exercise2TextBox");
         var comboBox = this.FindControl<ComboBox>("Exercise2ComboBox");
         var outputTextBlock = this.FindControl<TextBlock>("OutputTextBlock");
+        var checkBox = this.FindControl<CheckBox>("Exercise2CheckBox");
 
-        string output = $"TextBox: {textBox.Text}, ComboBox: {comboBox.SelectionBoxItem}";
+        string output = $"TextBox: {textBox.Text}, ComboBox: {comboBox.SelectionBoxItem}, CheckBox: {checkBox.IsChecked}";
         outputTextBlock.Text = output;
     }
     
