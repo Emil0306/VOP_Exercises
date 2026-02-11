@@ -13,8 +13,15 @@
                         
                         <TextBlock TextAlignment="Center" Margin="10" FontSize="26">Polymorphism</TextBlock>
                 </Border>
-                <Grid ColumnDefinitions="120 80 80" RowDefinitions="Auto Auto Auto Auto Auto" >
-                        
+                <Grid ColumnDefinitions="120 100 100" RowDefinitions="Auto Auto Auto Auto Auto" >
+                        <RadioButton GroupName="Shape" Grid.Row="0" Grid.Column="0" Margin="5" Name="RadioEllipse" IsCheckedChanged="RadioButtonHandler"/>
+                        <RadioButton GroupName="Shape" Grid.Row="1" Grid.Column="0" Margin="5" Name="RadioRectangle" IsCheckedChanged="RadioButtonHandler"/>
+                        <RadioButton GroupName="Shape" Grid.Row="2" Grid.Column="0" Margin="5" Name="RadioCircle" IsCheckedChanged="RadioButtonHandler"/>
+                        <RadioButton GroupName="Shape" Grid.Row="3" Grid.Column="0" Margin="5" Name="RadioSquare" IsCheckedChanged="RadioButtonHandler"/>
+                        <TextBox Grid.Row="0" Grid.Column="1" Margin="5" Name="TextBoxNumber1" IsVisible="False"/>
+                        <TextBox Grid.Row="0" Grid.Column="2" Margin="5" Name="TextBoxNumber2" IsVisible="False"/>
+                        <Button Grid.Row="1" Grid.Column="2" Margin="5" Content="Get Info" HorizontalAlignment="Center" Click="GetInfo_Click"/>
                 </Grid>
+                <TextBlock Grid.Row="4" Grid.Column="0" Margin="5" Name="TextBlockResult"/>
         </StackPanel>
 </Window>

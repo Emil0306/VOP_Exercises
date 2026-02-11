@@ -23,6 +23,24 @@ public sealed class ShapeFacade
 
     public string GetShapeInfo(Shapes shape, params double[] p)
     {
-        throw new NotImplementedException("Not implemented!");
+        AbstractShape abstractShape;
+        switch (shape)
+        {
+            case Shapes.Ellipse:
+                abstractShape = new Ellipse(p[0], p[1]);
+                break;
+            case Shapes.Circle:
+                abstractShape = new Circle(p[0]);
+                break;
+            case Shapes.Square:
+                abstractShape = new Square(p[0]);
+                break;
+            case Shapes.Rectangle:
+                abstractShape = new Rectangle(p[0], p[1]);
+                break;
+            default:
+                throw new Exception("Unknown shape type");
+        }
+        return abstractShape.ToString();
     }
 }
